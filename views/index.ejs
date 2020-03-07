@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Volunteer</title>
+        <meta charset="utf-8">
+        <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
+    </head>
+    <body style='background-color: rgb(98, 155, 199);'>
+        
+            <img style='float:left' height= 120 width= 120 src="http://www.sustainablemontereycounty.org/wp-content/uploads/CSMCrefresh/smalllogo.jpg">
+            <h1 style='padding-top: 50px'>&emsp;Sign Up To Become A Volunteer</h1>
+        <br style='clear:left'>
+        <h3>
+            Thank you for your interest in volunteering with Communities for Sustainable Monterey 
+            County.  Please take a few moments to tell us about yourself and the areas you are 
+            interested in contributing your time and talents.
+        </h3>
+        <h3>
+            First Name:* <input type='text' id='firstName'>  
+            Last Name:* <input type='text' id='lastName'><br>
+            Home Phone Number: <input type='text' id='homePhoneNumber'><br> <!-- POSSIBLY ONLY 1 PHONE NUMBER, B/C OF PRIMARY KEY -->
+            Mobile Phone Number: <input type='text' id='mobilePhoneNumber'><br>
+            Email Address: <input type='text' id='email'><br>
+            Facebook ID: <input type='text' id='facebookID'><br>
+            Street Address: <input type='text' id='streetAddress'><br>
+            City: <input type='text' id='cityAddress'><br>
+            State: <input type='text' id='stateAddress'><br>
+            Zip Code: <input type='text' id='zipAddress'><br>
+        </h3>
+        <br>
+        <h3>Which CSMC groups would you like to know more about
+            or get involved with? (check all that apply)
+            <br>
+            <input type='checkbox' name='bigSur' value='bigSur'>
+            <label for='bigSur'>Big Sur</label>&emsp;
+            <input type='checkbox' name='carmel' value='carmel'>
+            <label for='carmel'>Carmel</label>&emsp;
+            <input type='checkbox' name='marina' value='marina'>
+            <label for='marina'>Marina</label>&emsp;
+            <input type='checkbox' name='monterey' value='monterey'>
+            <label for='monterey'>Monterey</label>&emsp;
+            <input type='checkbox' name='pacificGrove' value='pacificGrove'>
+            <label for='pacificGrove'>Pacific Grove</label>&emsp;
+            <br>
+            <input type='checkbox' name='salinas' value='salinas'>
+            <label for='salinas'>Salinas</label>&emsp;
+            <input type='checkbox' name='seaside' value='seaside'>
+            <label for='seaside'>Seaside</label>&emsp;
+            <input type='checkbox' name='delReyOaks' value='delReyOaks'>
+            <label for='delReyOaks'>Del Rey Oaks</label>&emsp;
+            <input type='checkbox' name='general' value='general'>
+            <label for='general'>CSMC General</label>
+            <br>
+            <br>
+        </h3>
+        <h3>When is the best time to reach you?
+            <br>
+            Monday: <span style='margin:13px'></span>
+                <input type='checkbox' name='mondayMorning' value='mondayMorning'>
+                <label for='mondayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='mondayAfternoon' value='mondayAfternoon'>
+                <label for='mondayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='mondayEvening' value='mondayEvening'>
+                <label for='mondayMorning'>Evening</label>
+                <br>
+            Tuesday:<span style='margin:13px'></span>
+                <input type='checkbox' name='tuesdayMorning' value='tuesdayMorning'>
+                <label for='tuesdayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='tuesdayAfternoon' value='tuesdayAfternoon'>
+                <label for='tuesdayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='tuesdayEvening' value='tuesdayEvening'>
+                <label for='tuesdayMorning'>Evening</label>&emsp;
+                <br> 
+            Wednesday:
+                <input type='checkbox' name='wednesdayMorning' value='wednesdayMorning'>
+                <label for='tuesdayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='wednesdayAfternoon' value='wednesdayAfternoon'>
+                <label for='wednesdayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='wednesdayEvening' value='wednesdayEvening'>
+                <label for='wednesdayMorning'>Evening</label>&emsp;
+                <br>
+            Thursday:<span style='margin:6px'></span>
+                <input type='checkbox' name='thursdayMorning' value='thursdayMorning'>
+                <label for='thursdayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='thursdayAfternoon' value='thursdayAfternoon'>
+                <label for='thursdayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='thursdayEvening' value='thursdayEvening'>
+                <label for='thursdayMorning'>Evening</label>&emsp;
+                <br>
+            Friday:<span style='margin:18px'></span>
+                <input type='checkbox' name='fridayMorning' value='fridayMorning'>
+                <label for='fridayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='fridayAfternoon' value='fridayAfternoon'>
+                <label for='fridayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='fridayEvening' value='fridayEvening'>
+                <label for='fridayMorning'>Evening</label>&emsp;
+                <br>
+            Saturday:<span style='margin:8px'></span>
+                <input type='checkbox' name='satdayMorning' value='satdayMorning'>
+                <label for='satdayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='satdayAfternoon' value='satdayAfternoon'>
+                <label for='satdayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='satdayEvening' value='satdayEvening'>
+                <label for='satdayMorning'>Evening</label>&emsp;
+                <br>
+            Sunday:<span style='margin:15px'></span>
+                <input type='checkbox' name='sundayMorning' value='sundayMorning'>
+                <label for='sundayMorning'>Morning</label>&emsp;
+                <input type='checkbox' name='sundayAfternoon' value='sundayAfternoon'>
+                <label for='sundayMorning'>Afternoon</label>&emsp;
+                <input type='checkbox' name='sundayEvening' value='sundayEvening'>
+                <label for='sundayMorning'>Evening</label>&emsp;
+                <br>
+        </h3>
+
+        <h3>
+            Would you like to sign up as a group?
+            Name of the Group/Organization: <input type='text' id='groupName'>
+            <br>
+            What is your preferred method of communication: 
+            <select id='preferredCommunication' name='preferredCommunication'>
+                <option value='email'>Email</option>
+                <option value='textMessage'>Text Message</option>
+                <option value='facebook'>Facebook</option>
+                <option value='phone'>Phone</option>
+                <option value='inPerson'>In Person</option>
+                <option value='mail'>Mail</option>
+            </select>
+
+            <br>
+            <br>
+            What areas of our organization would you like to contribure your time and expertise? (check all that apply)
+            <br>
+            <br>
+            <table style='padding-left: 50px;'>
+                <tr style='text-align: center; font-size: x-large;'>
+                    <td>Operations</td>
+                    <td>&emsp;&emsp;&emsp;&emsp;</td>
+                    <td>Services</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type='checkbox' name='databaseManagement' value='databaseManagement'>
+                        <label for='databaseManagement'>Database Management</label><br>
+                        <input type='checkbox' name='financialAccounting' value='financialAccounting'>
+                        <label for='financialAccounting'>Financial Accounting</label><br>
+                        <input type='checkbox' name='fundraising' value='fundraising'>
+                        <label for='fundraising'>Fundraising</label><br>
+                        <input type='checkbox' name='grantWriting' value='grantWriting'>
+                        <label for='grantWriting'>Grant Writing</label><br>
+                        <input type='checkbox' name='humanResources' value='humanResources'>
+                        <label for='humanResources'>Human Resources</label><br>
+                        <input type='checkbox' name='informationTechnology' value='informationTechnology'>
+                        <label for='informationTechnology'>Information Technology</label><br>
+                        <input type='checkbox' name='legalAssistance' value='legalAssistance'>
+                        <label for='legalAssistance'>Legal Assistance</label><br>
+                        <input type='checkbox' name='partnerOutreach' value='partnerOutreach'>
+                        <label for='partnerOutreach'>Partner Outreach/Liaison</label>
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type='checkbox' name='eventPlanning' value='eventPlanning'>
+                        <label for='eventPlanning'>Event Planning, Support</label><br>
+                        <input type='checkbox' name='leglislativeAdvocacy' value='leglislativeAdvocacy'>
+                        <label for='leglislativeAdvocacy'>Leglislative Advocacy</label><br>
+                        <input type='checkbox' name='organizationPlanning' value='organizationPlanning'>
+                        <label for='organizationPlanning'>Organization Planning, Development</label><br>
+                        <input type='checkbox' name='physicalLabor' value='physicalLabor'>
+                        <label for='physicalLabor'>Physical Labor, Support</label><br>
+                        <input type='checkbox' name='research' value='research'>
+                        <label for='research'>Research</label><br>
+                        <input type='checkbox' name='trainingWorkshops' value='trainingWorkshops'>
+                        <label for='trainingWorkshops'>Training & Workshops</label>
+                        <br><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style='text-align: center; font-size: x-large;' colspan='3'>Communications</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type='checkbox' name='graphicDesign' value='graphicDesign'>
+                        <label for='graphicDesign'>Graphic Design</label><br>
+                        <input type='checkbox' name='internalOrganization' value='internalOrganization'>
+                        <label for='internalOrganization'>Internal Organization</label><br>
+                        <input type='checkbox' name='marketingOutreach' value='marketingOutreach'>
+                        <label for='marketingOutreach'>Marketing, Outreach</label><br>
+                        <input type='checkbox' name='photography' value='photography'>
+                        <label for='photography'>Photography</label><br>
+                        <input type='checkbox' name='publicSpeaking' value='publicSpeaking'>
+                        <label for='publicSpeaking'>Public Speaking</label><br>
+                        <input type='checkbox' name='volunteerCoordination' value='volunteerCoordination'>
+                        <label for='volunteerCoordination'>Volunteer Coordination</label><br>
+                        <input type='checkbox' name='volunteerTrainingSupervision' value='volunteerTrainingSupervision'>
+                        <label for='volunteerTrainingSupervision'>Volunteer Training & Supervision</label><br>
+                    </td>
+                    <td></td>
+                    <td>
+                        <input type='checkbox' name='socialMedia' value='socialMedia'>
+                        <label for='socialMedia'>Social Media</label><br>
+                        <input type='checkbox' name='videography' value='videography'>
+                        <label for='videography'>Videography</label><br>
+                        <input type='checkbox' name='websiteDesign' value='websiteDesign'>
+                        <label for='websiteDesign'>Website Design, Development</label><br>
+                        <input type='checkbox' name='writingEditing' value='writingEditing'>
+                        <label for='writingEditing'>Writing & Editing</label><br>
+                        <input type='checkbox' name='leadershipFunction' value='leadershipFunction'>
+                        <label for='leadershipFunction'>Leadership, Function & Operations</label><br>
+                        <input type='checkbox' name='leadershipSteering' value='leadershipSteering'>
+                        <label for='leadershipSteering'>Leadership, Steering Committee</label><br>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            How many hours per month on average would you like to commit to CSMC?
+            <input type='text' name='hoursPerMonth'>
+            <br>
+            <br>
+            <br>
+            What is your occupation or livelihood?<br>
+            If retired, what was your former occupation?<br>
+            If a student, what program/subject?<br>
+            <input type='text' name='occupation'>
+            <br>
+            <br>
+            What best describes your current life phase?
+            <select name='lifePhase'>
+                <option value='teenager'>Teenager</option>
+                <option value='higherEducation'>Higher Education</option>
+                <option value='parent'>Parent/Child Rearing</option>
+                <option value='working'>Working/Career</option>
+                <option value='postCareer'>Post Career</option>
+            </select>
+            
+        </h3>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.9.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.9.3/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+    </body>
+</html>
